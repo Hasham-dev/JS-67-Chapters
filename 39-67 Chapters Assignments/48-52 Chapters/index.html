@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>49-52 Chapters</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+    <!-- ////////////////Task 1 -->
+
+    <div class="container">
+
+        <fieldset>
+            <legend>Vendor Information</legend>
+            <div class="item">
+                <label for="vendor name">Vendor Name<span>*</span></label>
+                <input id="name" type="text" name="Vendor Name" required/ placeholder="XYZ Vendor">
+            </div>
+            <div class="item">
+                <label for="address">Vendor Address<span>*</span></label>
+                <input id="address" type="text" name="text" placeholder="Street Address" required />
+            </div>
+
+            <div class="item">
+                <div class="name-item">
+                    <div>
+                        <label for="NTN">NTN No</label>
+                        <input id="NTN" type="number" name="NTN" placeholder="00000000">
+                    </div>
+                    <div>
+                        <label for="CNIC">Proprietor CNIC No.<span>*</span></label>
+                        <input type="number" id="CNIC" name="CNIC" placeholder="00000-0000000-0" />
+                    </div>
+
+                </div>
+            </div>
+
+            <button onclick="chatApp('name','p'); chatApp('address','p');chatApp('NTN','p');chatApp('CNIC','p');">Submit</button>
+        </fieldset>
+    </div>
+
+
+    <div>
+        <div class="main">
+            <p>Vendor Name</p>
+            <p>Vendor Address</p>
+            <p>NTN no</p>
+            <p>CNIC NO</p>
+        </div>
+        <div id="main" class="main">
+
+        </div>
+    </div>
+
+
+<!-- Task 2 -->
+<h2>Read More Read Less Button</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+<button onclick="myFunction()" id="myBtn">Read more</button>
+
+
+<!-- Task 3 -->
+<body onload="createTable()">
+    <p>
+        <input type="button" id="addRow" value="Add New Row" onclick="addRow()" />
+    </p>
+    <div id="cont"></div>   <!--the container to add the table.-->
+    <p><input type="button" id="bt" value="Submit Data" onclick="submit()" /></p>
+</body>
+</body>
+<script src="app.js"></script>
+
+</html>

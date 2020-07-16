@@ -1,0 +1,17 @@
+
+
+.main{
+  border: 1px solid grey;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+p{
+  margin: 10px;
+}
+
+
+#more{
+  display: none;
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment</title>
+</head>
+<body>
+    <script>
+        //chapter : 9
+        //question 1
+        
+ var x = prompt("Enter Your City Name");
+ if (x==="karachi") {
+alert("Welcome To the city Of lights")     
+ }
+// question 2
+var y = prompt("What is Your Gender?");
+if (y==="male" ) {
+    alert("Good Morning Sir")
+} 
+if (y==="female" ) {
+    alert("Good Morning Ma'am")
+}
+//question 3
+var signal = prompt("What is the color of traffic signal right now")
+if (signal==="red") {
+    alert("Must Stop")
+}
+if (signal==="yellow") {
+alert("Ready To Move")    
+}
+if (signal==="green") {
+    alert("Move Now")
+}
+//question 4
+var fuel = prompt("Write The remaining Fuel of Your Car in litres")
+if (fuel<"0.25 litres") {
+    alert("Please Refill The Fuel In Your Car")
+}
+// Question 6
+document.write("--------------------Question 6---------------------" + "<br />")
+
+document.write("---------------------Marksheet-----------------" + "<br />")
+
+
+var subjectMarks1 = +prompt("Enter your Maths Marks" )
+
+var subjectMarks2 = +prompt("Enter your Physics Marks" )
+
+var subjectMarks3 = +prompt("Enter your Computer Marks" )
+
+var obtainedMarks= subjectMarks1 +subjectMarks2+ subjectMarks3 
+var totalsMarks= 300
+
+document.write("Subject Name is: Maths  " + "<br />")
+document.write("Subject Marks is: " + subjectMarks1 + "<br />")
+
+
+document.write("Subject Name is: Physics " + "<br />")
+document.write("Subject Marks is: " + subjectMarks2 + "<br />")
+
+document.write("Subject Name is: Computer " + "<br />")
+document.write("Subject Marks is: " + subjectMarks3 + "<br />")
+document.write("Total Marks is:" + totalsMarks + "<br />")
+document.write("Your Achieved Marks is: " + obtainedMarks + "<br />")
+
+document.write("Your Percentage% is " + (obtainedMarks/totalsMarks*100) + "<br />")
+var percent = obtainedMarks/totalsMarks*100
+if (percent>=80 && percent<100) {
+    document.write("Grade: A+" + "<br />")
+document.write("Remarks: Excellent")
+}
+if (percent>=70 && percent<80) {
+    document.write("Grade: A" + "<br />")
+document.write("Remarks: Good")
+}
+if (percent>=60 && percent<70) {
+    document.write("Grade: B" + "<br />")
+document.write("You Need To Improve")
+}
+if (percent<60 ) {
+    document.write("Grade: F" + "<br />")
+document.write("Remarks: Sorry You Are Fail")
+}
+//Question 7
+var secret = 4
+var guess = +prompt("Guess The Secret Number ?")
+
+if (guess===secret) {
+ alert("Bingo! Correct Answer")
+}
+if (guess===5) {
+    alert("Close Enough To The Correct Answer")
+}
+//question 8
+var number = +prompt("Enter a Number")
+if (number%3 == 0 && number!==0) {
+    alert("Number Is Divisible By 3")
+}
+//question 9
+var even = +prompt("Enter a Number")
+if (even%2==0 && even!==0) {
+    alert("Number Is Even")
+}
+if (even%2==!0 && even!==0) {
+    alert("Number Is Odd")
+}
+//question 10
+var temp = +prompt("Enter a Temperature")
+if (temp>=40) {
+    alert("Its Too Hot Outside")
+}
+if (temp>=30 && temp<40) {
+    alert("The Weather is Normal Today")
+}
+if (temp>=20 && temp<30) {
+    alert("The Weather is Cool Today")
+}
+if (temp>=10 && temp<20) {
+    alert("OMG The Weather is So Cool Today")
+}
+// question 11
+var a = +prompt("Enter a First Number");
+var b = +prompt("Enter a Second Number");
+
+var x = a + b;
+var y = a - b;
+var z = a * b;
+var xx = a / b;
+var yy = a % b;
+var solve = prompt("Which Operation do you want to Perform" + "<br />" + " + , - , *, / , %")
+if (solve==="+") {
+    alert("Your Solution is:" + " " + x)
+}
+else if (solve==="-") {
+    alert("Your Solution is:" + " " +  y)
+}
+else if (solve==="*") {
+    alert("Your Solution is:" + " " + z)
+}
+else if (solve==="/") {
+    alert("Your Solution is:" + " " + xx)
+}
+else if (solve==="%") {
+    alert("Your Solution is:" + " " + yy)
+}
+
+
+
+
+
+    </script>
+    <h1> <a href="index.html"> Back to Home </a></h1>
+</body>
+</html>

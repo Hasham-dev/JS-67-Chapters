@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+
+
+
+        //////////Task 1 
+        var arr = ["Bob","John","Bunny","Sunny"]
+
+        //////Task 2
+        var myObj = ["name" ,"John","age","18","city", "pakistan"]
+
+        ////////////Task 3
+        var Days = ["Monday","Tuesday","Wednesday","Thursday","Friday"]
+
+        var i;
+        for (i = 0; i < Days.length; i++) {
+               document.write(Days[i] + "<br>")   
+        }
+
+        /////////////Task 4
+        document.write("<br>" + "<br>" )
+        var num = [1,2,3,4,5,6,7,8]
+
+        var i;
+        for (i = 0; i < num.length; i++) {
+               document.write(num[i] + "<br>")   
+        }
+
+
+
+        /////////////////Task 5
+        document.write("<br>" + "<br>" )
+
+        var Boolean = [true,false,true,false]
+        for (i = 0; i < Boolean.length; i++) {
+       document.write(Boolean[i] + "<br>")   
+}     
+
+
+
+
+        ///////////////Task 6
+
+        document.write("<br>" + "<br>" )
+
+        var mixed = [1,"John",true]
+        for (i = 0; i < mixed.length; i++) {
+               document.write(mixed[i] + "<br>")   
+        }
+
+
+        
+        ///////////////Task 7
+
+        document.write("<br>" + "<br>" )
+        document.write("<b>Qualification</b>" + "<br>"+ "<br>" )
+
+        var educationPakistan = ["1)SSC", "2)HSC", "3)BCS", "4)BS", "5)BCOM", "5)MS", "6)M. Phil.", "7)PhD"]
+        for (i = 0; i < educationPakistan.length; i++) {
+               document.write(educationPakistan[i] + "<br>")   
+        }
+
+        ///////////////Task 8
+
+        document.write("<br>" + "<br>" )
+
+        var studentName = ["Hasham","Ghous","Ahmed"]
+        var markstaken = [320,230,480]
+        var totalMarks = [500];
+        var percentage =[ [(markstaken[0]/totalMarks)*100],[(markstaken[1]/totalMarks)*100] ,[(markstaken[2]/totalMarks)*100]]
+
+        for(i=0 ; i<3; i++){
+               document.write("Score of " + studentName[i] + " is " + markstaken[i] + ".percentage: " + percentage[i] + "%" + "<br>");
+        }        
+
+
+
+       /////////////////////Task 9
+
+
+
+
+
+
+
+
+
+
+
+
+       ////////////////Task 10
+       document.write("<br>" + "<br>" )
+       document.write("Score of Stduents : ");
+        var scoreOfStudent = [320,230,480,120]
+        for(i = 0 ; scoreOfStudent.length > i ; i++){
+               
+               document.write(scoreOfStudent[i] + ",")
+        }
+        
+        document.write(  "<br>" )
+       document.write("Ordered Score of Stduents : ");
+        document.write(scoreOfStudent.sort())
+
+
+
+        ///////////////Task 11
+        document.write("<br>" + "<br>" )
+
+        var cities = ["Karachi","Lahore","Islamabad","Peshawar"]
+        document.write("City List; <br>" + cities + "<br>" + "<br>");
+
+        document.write("Selected Cities <br>")
+        for( i=0 ; cities.length < i ; i++){
+               if(cities === "Karachi"){
+                      document.write(cities[i]);
+                      break
+               }
+        }
+        
+
+
+        //////////////////Task 12
+
+        document.write("<br>" + "<br>" )
+        var arr = ["This","is","my","cat"]
+        
+        document.write("Array ; <br>" + arr )
+
+        var arr$ = arr.join(" ")
+
+        document.write("<br> Sting ; <br>" + arr$)
+
+
+        //////////////////Task 13
+        document.write("<br>" + "<br>" )
+
+        var devices = ["Keyboard","mouse","printer","monitor"]
+
+        document.write  ("Devices: <br>" + devices + "<br>" + "<br>");
+        for(i=0 ; i < devices.length ; i++){
+               document.write("Out: <br>" + devices[i] + "<br>")
+        }
+        
+        document.write("<br>" + "<br>" )
+        for(i=devices.length; i >= 0 ; --i){
+               document.write("Out: <br>" + devices[i] + "<br>")
+        }
+
+
+
+
+        /////////////Task 14
+        
+        var manufactures = ["Apple","Samsung","Motorola","Nokia","Sony","Haier"]
+        
+    </script>
+</body>
+</html>

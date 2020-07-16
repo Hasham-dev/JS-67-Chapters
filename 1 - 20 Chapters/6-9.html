@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Assignment</title>
+</head>
+<body>
+    <script>
+        //question 1
+        document.write("--------------------Question 1---------------------" + "<br />")
+        var num = 20
+        document.write("RESULT:" + "<br />")
+        document.write("The Value Of a is:" + " " + num + "<br />")
+        document.write("---------------------------------------------" + "<br />")
+        document.write("The value of ++a is:" + " " + ++num + "<br />")
+        document.write("Now the value of a is:" + " " + num + "<br />" + "<br />" + "<br />")
+        document.write("The value of a++ is:" + " " + num++ + "<br />")
+        document.write("Now the value of a is:" + " " + num + "<br />" + "<br />" + "<br />")
+        document.write("The value of --a is:" + " " + --num + "<br />")
+        document.write("Now the value of a is:" + " " + num + "<br />" + "<br />" + "<br />")
+        document.write("The value of a-- is:" + " " + num-- + "<br />")
+        document.write("Now the value of a is:" + " " + num + "<br />" + "<br />" + "<br />")
+        //question 2
+        var a = 2
+        var b = 1
+        document.write("--------------------Question 2---------------------" + "<br />")
+        document.write("The original Value of a is:" + " " + a  + "<br />")
+        document.write("The original Value of b is:" + " " + b  + "<br />" + "<br />" + "<br />" )
+        document.write("Now the Value of --a is:" + " " + --a  + "<br />")
+        
+        document.write("Now the Value of --b is:" + " " + --b  + "<br />")
+        document.write("The result of --a - --b is:" + " " + (a - b)  + "<br />")
+        document.write("The result of --a - --b + ++b is:" + " " + (a - b + ++b)  + "<br />")
+        document.write("The final result of --a - --b + ++b + b-- is:" + " " + (a - --b + ++b + b--)  + "<br />" + "<br />" + "<br />")
+        document.write("--------------------Question 3---------------------" + "<br />")
+        //question 3
+        var yourname = prompt("Enter Your Name")
+        if (yourname!== "khan") {
+            alert("Welcome to our Page" + " " + yourname)
+        }
+        document.write("Prompt Name Question"  + "<br />" + "<br />" + "<br />")
+        document.write("--------------------Question 4,5---------------------" + "<br />")
+        document.write("---------------------Table of Number-----------------" + "<br />")
+
+var myPrompt = +prompt("Enter your Number?")   
+var count =0
+if (myPrompt!==0) {
+    document.write(myPrompt + " X " + ++count + "= " + (myPrompt*count) + "<br />") 
+document.write(myPrompt + " X " + ++count + "= " + (myPrompt*count)+ "<br />") 
+document.write(myPrompt + " X " + ++count + "= " + (myPrompt*count)+ "<br />") 
+document.write(myPrompt + " X " + ++count + "= " + (myPrompt*count)+ "<br />") 
+document.write(myPrompt + " X " + ++count + "= " + (myPrompt*count)+ "<br />") 
+document.write(myPrompt + " X " + ++count + "= " + (myPrompt*count)+ "<br />") 
+document.write(myPrompt + " X " + ++count + "= " + (myPrompt*count)+ "<br />") 
+document.write(myPrompt + " X " + ++count + "= " + (myPrompt*count)+ "<br />") 
+document.write(myPrompt + " X " + ++count + "= " + (myPrompt*count)+ "<br />") 
+document.write(myPrompt + " X " + ++count + "= " + (myPrompt*count)+ "<br />")
+    
+}
+
+else if (myPrompt===0) {
+    document.write(5 + " X " + ++count + "= " + (5*count) + "<br />") 
+document.write(5 + " X " + ++count + "= " + (5*count)+ "<br />") 
+document.write(5 + " X " + ++count + "= " + (5*count)+ "<br />") 
+document.write(5 + " X " + ++count + "= " + (5*count)+ "<br />") 
+document.write(5 + " X " + ++count + "= " + (5*count)+ "<br />") 
+document.write(5 + " X " + ++count + "= " + (5*count)+ "<br />") 
+document.write(5 + " X " + ++count + "= " + (5*count)+ "<br />") 
+document.write(5 + " X " + ++count + "= " + (5*count)+ "<br />") 
+document.write(5 + " X " + ++count + "= " + (5*count)+ "<br />") 
+document.write(5 + " X " + ++count + "= " + (5*count)+ "<br />" + "<br />" + "<br />")
+}
+document.write("--------------------Question 6---------------------" + "<br />")
+var subjectName1 = prompt("Enter Your Subject Name?")
+var subjectMarks1 = +prompt("Enter your " + subjectName1 + " Marks" )
+var subjectName2 = prompt("Enter Your Subject Name?")
+var subjectMarks2 = +prompt("Enter your " + subjectName2 + " Marks" )
+var subjectName3 = prompt("Enter Your Subject Name?")
+var subjectMarks3 = +prompt("Enter your " + subjectName3 + " Marks" )
+var obtainedMarks= subjectMarks1 +subjectMarks2+ subjectMarks3 
+var totalsMarks= 300
+document.write("<table>" + "<tr>" + "<th>" + "Subject" + "</th>" + "<th>" + "Total Marks" + "</th>" + "<th>" + "Obtained Marks" + "</th>" + "<th>" + "Percentage" + "</th>" + "</tr>")
+document.write("<tr>" + "<td>" + subjectName1 + "</td>" + "<td>" + 100 + "</td>" + "<td>" + subjectMarks1 + "</td>" + "<td>" + subjectMarks1 + "%" + "</td>" + "</tr>")
+document.write("<tr>" + "<td>" + subjectName2 + "</td>" + "<td>" + 100 + "</td>" + "<td>" + subjectMarks2 + "</td>" + "<td>" + subjectMarks2 + "%" + "</td>" + "</tr>")
+document.write("<tr>" + "<td>" + subjectName3 + "</td>" + "<td>" + 100 + "</td>" + "<td>" + subjectMarks3 + "</td>" + "<td>" + subjectMarks3 + "%" + "</td>" + "</tr>")
+document.write("<tr>" + "<td>" + " " + "</td>" + "<td>" + totalsMarks + "</td>" + "<td>" + obtainedMarks + "</td>" + "<td>" + (obtainedMarks/totalsMarks*100) + "</td>" + "</tr>" + "</table>" + "<br />" + "<br />" + "<br />" )  
+</script>
+<h1> <a href="index.html"> Back to Home </a></h1>
+</body>
+</html>
